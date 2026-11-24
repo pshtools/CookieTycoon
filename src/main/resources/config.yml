@@ -1,8 +1,4 @@
 connection-string: "mongodb://localhost:27017/"
 db-name: "cookieTycoon"
-
-# Как часто (в секундах) сохранять прогресс игроков, не дожидаясь выхода. Минимум 10.
-autosave-seconds: 60
-
-# Запретить выбрасывать/перекладывать служебные предметы в инвентаре игрока.
+autosave-seconds: 60 
 protect-inventory: true
