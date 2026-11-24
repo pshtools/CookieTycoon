@@ -1,0 +1,39 @@
+name: CookieTycoon
+version: '${version}'
+main: com.tools.cookieTycoon.CookieTycoon
+api-version: '1.16'
+authors: [ tools ]
+description: Cookie Clicker in Minecraft!
+
+commands:
+  ck:
+    description: "Админ-команды печенья"
+    usage: "/ck <add|set|remove|wipe> <ник> [кол-во]"
+    aliases: [ct]
+    permission: cookietycoon.admin
+  upgrade:
+    description: "Админ-команды улучшений"
+    usage: "/upgrade <add|set|remove|wipe> <ник> [апгрейд] [кол-во]"
+    aliases: [upgrades, ups]
+    permission: cookietycoon.admin
+  info:
+    description: "Информация об игроке"
+    usage: "/info <ник>"
+    aliases: [inf]
+    permission: cookietycoon.info
+  menu:
+    description: "Меню улучшений"
+  rebirth:
+    description: "Перерождение"
+    aliases: [rb]
+  ach:
+    description: "Купить ачивки"
+    aliases: [achievement, achievements, achs, achieves]
+
+permissions:
+  cookietycoon.admin:
+    description: Админ-команды /ck и /upgrade
+    default: op
+  cookietycoon.info:
+    description: Команда /info
+    default: op
